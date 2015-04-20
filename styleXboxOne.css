@@ -66,7 +66,7 @@
   color: white;
 }
 
-.container
+.container1
 {
     width: 1060px;
     height :auto;
@@ -139,14 +139,14 @@ input
 
 /*  GRID OF FOUR  */
 .span_4_of_4 {
-	width: 100%;
+	width: 21.25%;
     
 }
 .span_3_of_4 {
-	width: 73.75%;
+	width: 21.25%;
 }
 .span_2_of_4 {
-	width: 47.5%;
+	width: 21.25%;
 }
 .span_1_of_4 {
 	width: 21.25%;
