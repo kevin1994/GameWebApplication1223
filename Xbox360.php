@@ -10,7 +10,7 @@ include_once("connection.php");
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Slashed Games | Xbox One Games</title>
 <link href="styleXboxOne.css" rel="stylesheet" type="text/css" >
-<link href="style2.css" rel="stylesheet" type="text/css">
+<link href="styleXbox.css" rel="stylesheet" type="text/css">
 </head>
     
     
@@ -63,7 +63,7 @@ include_once("connection.php");
             echo '<div class="product-info">';           
 			echo 'Price: '.$currency.$obj->products_price.' | ';
             echo 'Quantity: <input type="text" name="products_qty" value="1" size="3" />';
-			echo '<button class="add_to_cart">Add To Cart</button>';
+			echo '<button class="add_to_cart">  Add To Cart</button>';
 			echo '</div></div>';
             echo '<input type="hidden" name="products_id" value="'.$obj->products_id.'" />';
             echo '<input type="hidden" name="type" value="add" />';

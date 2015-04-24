@@ -62,32 +62,26 @@
 
 }
 
-.navigationbar ul li a:hover {
-  color: white;
-}
-
 .container
 {
     width: 1060px;
-    height :auto;
+    height: auto;
     margin: 0 auto;
     padding-top: 10px;
-    padding-left: 30px;
-    background-color: white; 
-    
+    background-color: darkblue; 
     
 }
 
 .logo
 {
-    background-color: #003399;
+    background-color: darkblue;
     width: 100%;
     
 }
 
 .colour{
-    background-color: #003399;
-    padding-bottom: 30px
+    background-color: darkblue;
+    padding-bottom: 10px;
 }
 
 .mainform
@@ -100,60 +94,11 @@
 }
 
 
-
-
 input
 {
-    border-style: solid;
-    border-width: 3%;
-    font-size: 25px;
-    width: 50%;
+    margin-right: 10px;
+    width: 60%;
     color: #848482;
     border-style: solid;
     border-color: #E5E4E2;
-}
-
-//
-
-/*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-    
-}
-
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 5.0%;
-}
-.col:first-child { margin-left: 0; }
-
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-
-/*  GRID OF FOUR  */
-.span_4_of_4 {
-	width: 100%;
-    
-}
-.span_3_of_4 {
-	width: 73.75%;
-}
-.span_2_of_4 {
-	width: 47.5%;
-}
-.span_1_of_4 {
-	width: 21.25%;
-}
-
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-	.col {  margin: 1% 0 1% 0%; }
-	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
 }

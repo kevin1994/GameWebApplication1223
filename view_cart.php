@@ -9,10 +9,9 @@ include_once("connection.php");
 <title> Slashed Games | Shopping Cart </title>
 <link rel="stylesheet" type="text/css" href="style.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link href="styleXboxOne.css" rel="stylesheet" type="text/css" />
 <link href="style2.css" rel="stylesheet" type="text/css">
 </head>
-
 
 <body>
 		<div class="header">
@@ -29,10 +28,8 @@ include_once("connection.php");
 			      		<li><a href="Xbox360.php">Xbox 360</a></li>
 			      		<li><a href="PS4.php">PS4</a></li>
 			      		<li><a href="PS3.php">PS3</a></li>  
-                        		<li><a href="WiiU.php">WiiU</a></li>
+                        <li><a href="WiiU.php">WiiU</a></li>
 			       </div>	   
-
-
 
 <div id="products-wrapper">
  <div class="view-cart">
@@ -75,6 +72,7 @@ include_once("connection.php");
     	echo '</ul>';
 		echo '<span class="check-out-txt">';
 		echo '<strong>Total : '.$currency.$total.'</strong>  ';
+    	echo '<input type="submit" value="Pay Now" />';
 		echo '</span>';
 		echo '</form>';
 		

@@ -8,9 +8,9 @@ include_once("connection.php");
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Slashed Games | PS3 Games</title>
-<link href="stylePS3.css" rel="stylesheet" type="text/css" >
-<link href="stylePS.css" rel="stylesheet" type="text/css">
+<title>Slashed Games | Xbox One Games</title>
+<link rel="stylesheet" type="text/css" href="styleXboxOne.css" />
+<link href="style2.css" rel="stylesheet" type="text/css">
 </head>
     
     
@@ -21,7 +21,7 @@ include_once("connection.php");
 		<div class="header">
 		    <div class="nav">
 		          <li><a href="login.php">Login</a></li>
-		          <li><a href="register.php">Register</a></li>
+		          <li><a href="register.html">Register</a></li>
 		    </div>
 
 		    	<img src="banner.png" alt="Slashed Games Banner" title="Slashed Games Banner" >  
@@ -39,14 +39,14 @@ include_once("connection.php");
 <div id="products-wrapper">
             <div class="colour">
             <div class="logo" align="middle">
-    <img src="PS3Games/PS3logo.png" width="600px" height="100px">
+    <img src="Xbox360Games/XBOX360LOGO.png" width="600px" height="100px">
             </div>
     <div class="products">
     <?php
     //current URL of the Page. cart_update.php redirects back to this URL
 	$current_url = base64_encode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
     
-	$results = $mysqli->query("SELECT * FROM Products WHERE Products_console='PS3' ");
+	$results = $mysqli->query("SELECT * FROM Products WHERE Products_console='Xbox 360' ");
     if ($results) { 
 	
         //fetch results set as object and output HTML
@@ -56,11 +56,11 @@ include_once("connection.php");
             echo '<form method="post" action="cart_update.php">';
 			echo '<div class="product-thumb"><img src="images/'.$obj->products_img.'"\" width=85px height=100px></div>';
             echo '<div class="product-content"><h3>'.$obj->products_name.'</h3>';
-            echo '<div class="product-desc">'.$obj->products_description.' | ';          
-            echo 'Age Rating: '.$obj->products_age.' | ';
-            echo 'Genre: '.$obj->products_genre.'
+            echo '<div class="product-desc">'.$obj->products_description.' | ';
+            echo 'Genre: '.$currency.$obj->products_genre.'
             </div>';
             echo '<div class="product-info">';           
+            echo 'Age Rating: '.$obj->products_age.' | ';
 			echo 'Price: '.$currency.$obj->products_price.' | ';
             echo 'Quantity: <input type="text" name="products_qty" value="1" size="3" />';
 			echo '<button class="add_to_cart">Add To Cart</button>';
