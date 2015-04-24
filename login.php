@@ -35,7 +35,7 @@ require 'connection.php';
 <html>
 
 <head>
-	<title> Slashed Games: Login </title>
+	<title> Slashed Games | Login </title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>	
 
@@ -43,19 +43,19 @@ require 'connection.php';
 	<div class="background">
 		<div class="header">
 		    <div class="nav">
-		          <li><a href="login.html">Login</a></li>
-		          <li><a href="register.html">Register</a></li>
+		          <li><a href="login.php">Login</a></li>
+		          <li><a href="register.php">Register</a></li>
 		    </div>
 
 		    	<img src="banner.png" alt="Slashed Games Banner" title="Slashed Games Banner" />  
 			       <div class="navigationbar">
 			      	<ul>
-			     <li><a href="index.html">Home</a></li>
-			      		<li><a href="XboxOne.html">Xbox One</a></li>
-			      		<li><a href="Xbox360.html">Xbox 360</a></li>
-			      		<li><a href="PS4.html">PS4</a></li>
-			      		<li><a href="ps3.html">PS3</a></li>  
-                        <li><a href="WiiU.html">WiiU</a></a></li>		
+			      		<li><a href="index.html">Home</a></li>
+			      		<li><a href="XboxOne.php">Xbox One</a></li>
+			      		<li><a href="Xbox360.php">Xbox 360</a></li>
+			      		<li><a href="PS4.php">PS4</a></li>
+			      		<li><a href="PS3.php">PS3</a></li>  
+                        		<li><a href="WiiU.php">WiiU</a></li>
 			       </div>	 
 
 		<div class="container">

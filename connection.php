@@ -1,12 +1,9 @@
 <?php
-  
-    $server='194.81.104.22'; 
-    $user='team4'; 
-    $pass='group4'; 
+$currency = '£'; //Currency symbol or code
 
-    $conn = mysql_connect($server, $user, $pass) or die ('Error connecting to mysql');
-
-    $dbname = 'test';
-    mysql_select_db($dbname);
-  
+$db_username = 'team4';
+$db_password = 'group4';
+$db_name = 'db_team4';
+$db_host = '194.81.104.22';
+$mysqli = new mysqli($db_host, $db_username, $db_password,$db_name);
 ?>
