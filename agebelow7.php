@@ -8,7 +8,7 @@ include_once("connection.php");
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Slashed Games | PS4 Games</title>
+<title>Slashed Games | WiiU Games</title>
 <link href="stylePS3.css" rel="stylesheet" type="text/css" >
 <link href="stylePS.css" rel="stylesheet" type="text/css">
 </head>
@@ -37,16 +37,13 @@ include_once("connection.php");
         </div>
     </div>       
 <div id="products-wrapper">
-            <div class="colour">
-            <div class="logo" align="middle">
-    <img src="PS4Games/PS4logo.png" width="600px" height="100px">
-            </div>
+    <h1>Games for Children</h1>
     <div class="products">
     <?php
     //current URL of the Page. cart_update.php redirects back to this URL
 	$current_url = base64_encode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
     
-	$results = $mysqli->query("SELECT * FROM Products WHERE Products_console='PS4' ");
+	$results = $mysqli->query("SELECT * FROM Products WHERE Products_age='3' ");
     if ($results) { 
 	
         //fetch results set as object and output HTML

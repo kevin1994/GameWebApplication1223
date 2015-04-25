@@ -68,8 +68,16 @@
     height: auto;
     margin: 0 auto;
     padding-top: 10px;
+    padding-bottom: 10px;
     
 }
+.containeroffers
+{
+    margin-top: 20px;
+    margin-left: 200px;
+    padding-bottom: 100px;
+}
+
 
 .logo
 {

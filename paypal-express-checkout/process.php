@@ -20,7 +20,7 @@ if($_POST) //Post Data received from product list page.
 	
     foreach($_POST['products_name'] as $key=>$itmname)
     {
-        $products_id 	= filter_var($_POST['product_id'][$key], FILTER_SANITIZE_STRING); 
+        $products_id 	= filter_var($_POST['products_id'][$key], FILTER_SANITIZE_STRING); 
 		
 		$results = $mysqli->query("SELECT products_name, products_description, products_price FROM Products WHERE products_id='$products_id' LIMIT 1");
 		$obj = $results->fetch_object();
@@ -68,7 +68,6 @@ if($_POST) //Post Data received from product list page.
 				'&PAYMENTREQUEST_0_AMT='.urlencode($GrandTotal).
 				'&PAYMENTREQUEST_0_CURRENCYCODE='.urlencode($PayPalCurrencyCode).
 				'&LOCALECODE=GB'. //PayPal pages to match the language on your website.
-				'&LOGOIMG=http://www.sanwebe.com/wp-content/themes/sanwebe/img/logo.png'. //site logo
 				'&CARTBORDERCOLOR=FFFFFF'. //border color of cart
 				'&ALLOWNOTE=1';
 		

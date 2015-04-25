@@ -8,7 +8,7 @@ include_once("connection.php");
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Slashed Games | Xbox One Games</title>
+<title>Slashed Games | Xbox 360 Games</title>
 <link href="styleXboxOne.css" rel="stylesheet" type="text/css" >
 <link href="styleXbox.css" rel="stylesheet" type="text/css">
 </head>
